@@ -14,7 +14,7 @@ public class GreatDealsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String category = request.getParameter("category");
-        int userId = 2; // For testing, replace with session user id
+        int userId = 2; 
 
         List<Item> items = new ArrayList<>();
 
@@ -22,7 +22,8 @@ public class GreatDealsServlet extends HttpServlet {
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/fashioondb", "root", "krrish@001#400"); // update credentials
+                        // Credentials hidden for security. (Krish Patidar)
+                        "DB_URL", "DB_USER", "DB_PASSWORD"); 
 
                 String sql = "SELECT i.id, i.item_name, i.price, i.description, i.image_url " +
                         "FROM items i " +
