@@ -19,7 +19,6 @@ public class AddToCartServlet extends HttpServlet {
         }
 
         try (Connection conn = DBConnection.getConnection()) {
-            // Check if item already in cart
             PreparedStatement check = conn.prepareStatement(
                     "SELECT * FROM cart WHERE user_id=? AND item_id=?");
             check.setInt(1, userId);
