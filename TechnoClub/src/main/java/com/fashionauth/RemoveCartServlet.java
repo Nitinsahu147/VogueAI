@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/RemoveCartServlet")
 public class RemoveCartServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String cartIdStr = request.getParameter("cartId"); // get cartId from JS
+        String cartIdStr = request.getParameter("cartId"); 
         if(cartIdStr == null || cartIdStr.isEmpty()) {
             response.getWriter().write("fail");
             return;
