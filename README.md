@@ -2,7 +2,7 @@
 
 **Developed by ByteSquad** during the **Hackwave 2.0 Hackathon (36 hours)** at **CDGI (Chameli Devi Group of Institutions), Indore**.  
 
-This is an **AI-powered Fashion Search Engine** web application built with **Core Java + Advanced Java (JSP, Servlets, JDBC)**. The platform helps users discover, compare, and get personalized fashion recommendations from thousands of brands and retailers.
+This is an **AI-powered Fashion Search Engine** web application built with **Core Java + Advanced Java (JSP, Servlets, JDBC), Python**. The platform helps users discover, compare, and get personalized fashion recommendations from thousands of brands and retailers.
 
 ---
 
