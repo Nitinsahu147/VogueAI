@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
             if (rs.next()) {
                 HttpSession session = req.getSession();
                 session.setAttribute("userName", rs.getString("name"));
-                session.setAttribute("userId", rs.getInt("id")); // store user_id
+                session.setAttribute("userId", rs.getInt("id"));
                 res.sendRedirect("dashboard.jsp");
             }
  else {
