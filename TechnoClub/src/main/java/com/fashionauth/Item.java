@@ -7,11 +7,9 @@ public class Item {
     private String description;
     private String imageUrl;
 
-    // ✅ Add a default constructor
     public Item() {
     }
 
-    // Parameterized constructor (optional)
     public Item(int id, String itemName, double price, String description, String imageUrl) {
         this.id = id;
         this.itemName = itemName;
@@ -20,7 +18,6 @@ public class Item {
         this.imageUrl = imageUrl;
     }
 
-    // Getters and setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
