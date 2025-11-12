@@ -9,12 +9,10 @@ import java.util.*;
 @WebServlet("/CompareServlet")
 public class CompareServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Simulated products selected by user
         List<Product> products = new ArrayList<>();
         products.add(new Product("Red Dress", "images/red_dress.jpg", 1500));
         products.add(new Product("Blue Blouse", "images/blue_blouse.jpg", 1200));
 
-        // Call AI analysis
         for(Product p : products) {
             performAIAnalysis(p);
         }
@@ -25,7 +23,6 @@ public class CompareServlet extends HttpServlet {
     }
 
     private void performAIAnalysis(Product p) {
-        // This is placeholder AI logic. Replace with actual ML/AI model
         if(p.getName().toLowerCase().contains("dress")) {
             p.setStyle("Party");
             p.setOccasion("Party");
