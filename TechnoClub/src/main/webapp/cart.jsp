@@ -16,7 +16,6 @@
         try {
             conn = DBConnection.getConnection();
 
-            // Query total items and total value
             psTotal = conn.prepareStatement(
                 "SELECT SUM(c.quantity) as total_items, SUM(c.quantity * i.price) as total_value " +
                 "FROM cart c JOIN items i ON c.item_id = i.id WHERE c.user_id=?"
@@ -28,7 +27,6 @@
                 totalValue = rsTotal.getDouble("total_value");
             }
 
-            // Query all cart items
             psItems = conn.prepareStatement(
                 "SELECT c.id AS cart_id, c.quantity, i.id AS item_id, i.item_name, i.price, i.image_url " +
                 "FROM cart c JOIN items i ON c.item_id = i.id WHERE c.user_id=?"
@@ -50,15 +48,11 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!-- Bootstrap & Fonts & CSS (keep your CSS as is) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-   <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <style>
