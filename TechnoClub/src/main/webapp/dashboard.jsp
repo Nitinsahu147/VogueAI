@@ -6,7 +6,7 @@
 <%
     String userName = null;
 
-    if (session != null) {   // directly use JSP implicit session
+    if (session != null) {   
         userName = (String) session.getAttribute("userName");
     }
 
