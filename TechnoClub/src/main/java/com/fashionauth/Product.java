@@ -5,12 +5,11 @@ public class Product {
     private String imageUrl;
     private double price;
 
-    // AI analysis attributes
-    private String style; // casual, formal, party
-    private String colorMatch; // good, average, poor
-    private double trendScore; // 0 to 10
-    private String occasion; // work, party, casual
-    private String verdict; // AI recommendation
+    private String style; 
+    private String colorMatch; 
+    private double trendScore;
+    private String occasion; 
+    private String verdict; 
 
     public Product(String name, String imageUrl, double price) {
         this.name = name;
@@ -18,7 +17,6 @@ public class Product {
         this.price = price;
     }
 
-    // getters and setters
     public String getName() { return name; }
     public String getImageUrl() { return imageUrl; }
     public double getPrice() { return price; }
