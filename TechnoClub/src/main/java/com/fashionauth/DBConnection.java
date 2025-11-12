@@ -5,9 +5,10 @@ import java.sql.DriverManager;
 
 public class DBConnection {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/fashioondb";
-    private static final String USER = "root";  // change if needed
-    private static final String PASSWORD = "krrish@001#400"; // change to your DB password
+    // Credentials hidden for security. (Krish Patidar)
+    private static final String URL = "DB_URL";
+    private static final String USER = "DB_USER"; 
+    private static final String PASSWORD = "DB_PASSWORD"; 
 
     public static Connection getConnection() {
         Connection con = null;
