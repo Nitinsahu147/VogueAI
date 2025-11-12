@@ -37,7 +37,6 @@ public class UpdateUserServlet extends HttpServlet {
             int updated = ps.executeUpdate();
 
             if (updated > 0) {
-                // Update session values
                 session.setAttribute("userName", newName);
                 session.setAttribute("userEmail", newEmail);
                 response.sendRedirect("account.jsp?success=1");
