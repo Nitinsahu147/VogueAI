@@ -21,7 +21,6 @@ import jakarta.servlet.http.Part;
 public class AddItemServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    // Change this to your project upload folder path
     private static final String UPLOAD_DIR = "uploads";
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -38,21 +37,18 @@ public class AddItemServlet extends HttpServlet {
         String priceStr = request.getParameter("price");
         String description = request.getParameter("description");
 
-        // Handle image upload
         Part filePart = request.getPart("item_image");
         String fileName = System.currentTimeMillis() + "_" + filePart.getSubmittedFileName();
 
         String appPath = request.getServletContext().getRealPath("");
         String uploadPath = appPath + File.separator + UPLOAD_DIR;
 
-        // Create uploads folder if not exists
         File uploadDir = new File(uploadPath);
         if (!uploadDir.exists()) uploadDir.mkdir();
 
         String filePath = uploadPath + File.separator + fileName;
         filePart.write(filePath);
 
-        // Store relative path to DB (not absolute path)
         String imageUrl = UPLOAD_DIR + "/" + fileName;
 
         try {
