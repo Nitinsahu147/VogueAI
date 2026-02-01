@@ -121,7 +121,8 @@ Unauthorized copying, distribution, or modification of any part of this project 
 
 ## **License**
 
-**ByteSquad License v1.0**
+**ByteSquad License**
+[MIT License](LICENSE)
 
 This software and its associated documentation are proprietary to ByteSquad.
 You may view and reference the code for educational and non-commercial purposes only.
