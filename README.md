@@ -189,7 +189,6 @@ Communication between Java and Python services occurs through **REST APIs using 
 
 - **Krish Patidar** – Team Leader, Backend & System Architecture  
 - **Chintu** – Frontend Developer  
-- **Ayyub** – Frontend Developer  
 - **Nitin** – Database & Integration  
 
 ---
@@ -213,3 +212,10 @@ Vogue AI demonstrates how **Artificial Intelligence and Enterprise Web Technolog
 This project showcases the potential of **AI + Full Stack Development** in building next-generation digital commerce platforms.
 
 ---
+
+## ⚠️ Copyright & Usage Policy
+
+© 2025 Team ByteSquad. All Rights Reserved.
+
+This repository is shared for demonstration and portfolio purposes only.  
+Cloning, reusing, or redistributing the source code or project idea without prior permission from the authors is strictly prohibited.
