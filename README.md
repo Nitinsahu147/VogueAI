@@ -187,7 +187,7 @@ Communication between Java and Python services occurs through **REST APIs using 
 
 # 👨‍💻 Team ByteSquad
 
-- **Krish Patidar** – Team Leader, Backend & System Architecture  
+- **Krish Patidar** – Team Leader, Full-Stack Developer (Backend & AI Integration)  
 - **Chintu** – Frontend Developer  
 - **Nitin** – Database & Integration  
 
