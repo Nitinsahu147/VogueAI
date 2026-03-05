@@ -48,7 +48,7 @@ Users can upload an image of any clothing item to find **similar products** from
 
 ---
 
-## 👕 2. Wardoor – Digital Wardrobe
+## 👕 2. Wardrobe – Digital Wardrobe
 
 Users can upload their own clothing items to create a **personal digital wardrobe**.
 
@@ -173,15 +173,15 @@ Communication between Java and Python services occurs through **REST APIs using 
 
 ---
 
-# 📸 Project Screenshots
+## 📸 Project Screenshots
 
-| Homepage | Product Search | Wardoor |
+| Homepage | User Dashboard | Discover |
 |---------|---------------|---------|
-| <img src="screenshots/homepage.png" width="350"> | <img src="screenshots/search.png" width="350"> | <img src="screenshots/wardoor.png" width="350"> |
+| <img src="https://github.com/user-attachments/assets/2a4298d6-9c90-4779-b8bf-fd4fbd0de33e" width="350"> | <img src="https://github.com/user-attachments/assets/c54526f9-d51a-43ab-8009-4be0e4e39396" width="350"> | <img src="https://github.com/user-attachments/assets/07026504-8e48-41d6-84c1-d2cb054f9901" width="350"> |
 
-| Product Comparison | AI Chatbot | User Dashboard |
-|-------------------|-----------|---------------|
-| <img src="screenshots/comparison.png" width="350"> | <img src="screenshots/chatbot.png" width="350"> | <img src="screenshots/dashboard.png" width="350"> |
+| Product Comparison | Wardrobe (1/2) | Wardrobe (2/2) | Visual Search |
+|-------------------|---------------|---------------|---------------|
+| <img src="https://github.com/user-attachments/assets/00ef5ccd-fced-4374-b9c7-5241bc96be14" width="300"> | <img src="https://github.com/user-attachments/assets/d382768c-f1ea-49cd-aefe-7939f61a9e21" width="300"> | <img src="https://github.com/user-attachments/assets/32709aad-55a7-4a58-b2cf-9ba9e663125a" width="300"> | <img src="https://github.com/user-attachments/assets/0499bcf3-a8ec-45c9-a215-828cdd25c5ca" width="300"> |
 
 ---
 
